@@ -1,0 +1,20 @@
+language: node_js
+
+install:
+  - yarn
+
+script:
+  - yarn build
+
+deploy:
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_API_KEY
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: keboola/codemirror-mode-sfsql
+      branch: master
+
+notifications:
+  email: false
