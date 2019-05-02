@@ -3,16 +3,11 @@
 // 
 // Copied from https://github.com/codemirror/CodeMirror/blob/5.6.0/mode/sql/sql.js (CodeMirror 5.6.0).
 //
+// ---
+// Copied from https://keboola.snowflakecomputing.com/assets/ui/Main/scripts/codemirror-extensions/5.6.0/mode/sql/sfsql.js
+// and modified by Keboola
 
-(function(mod) {
-  if (typeof exports == "object" && typeof module == "object") // CommonJS
-    mod(require("../../lib/codemirror"));
-  else if (typeof define == "function" && define.amd) // AMD
-    define(["../../lib/codemirror"], mod);
-  else // Plain browser env
-    mod(CodeMirror);
-})(function(CodeMirror) {
-"use strict";
+import Codemirror from 'codemirror';
 
 CodeMirror.defineMode("sfsql", function(config, parserConfig) {
   "use strict";
@@ -320,8 +315,6 @@ CodeMirror.defineMode("sfsql", function(config, parserConfig) {
   });
 
 }());
-
-});
 
 /*
   How Properties of Mime Types are used by SQL Mode
