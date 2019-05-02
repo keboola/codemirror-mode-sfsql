@@ -7,7 +7,7 @@
 // Copied from https://keboola.snowflakecomputing.com/assets/ui/Main/scripts/codemirror-extensions/5.6.0/mode/sql/sfsql.js
 // and modified by Keboola
 
-import Codemirror from 'codemirror';
+import CodeMirror from 'codemirror';
 
 CodeMirror.defineMode("sfsql", function(config, parserConfig) {
   "use strict";
