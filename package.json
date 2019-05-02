@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "A CodeMirror mode for the Snowflake Data Warehouse",
   "main": "lib/index.js",
-  "repository": "git@github.com:keboola/codemirror-mode-sfsql.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/keboola/codemirror-mode-sfsql.git"
+  },
   "author": "Keboola s.r.o.",
   "license": "MIT",
   "peerDependencies": {
@@ -18,5 +21,13 @@
   },
   "files": [
     "lib"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "Codemirror",
+    "Snowflake",
+    "mode"
   ]
 }
