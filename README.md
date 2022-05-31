@@ -9,3 +9,7 @@
 ```console
 yarn add @keboola/codemirror-mode-sfsql
 ```
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
